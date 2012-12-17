@@ -1,0 +1,41 @@
+!!! 5
+%html
+  %head
+    %title Registration Page
+    %link{ :href => "/css/bootstrap.css", :type => "text/css", :rel => "stylesheet" }
+    %link{ :href => "/css/style.css", :type => "text/css", :rel => "stylesheet" }
+  %body
+    %nav
+      %header 
+        %h1 Fetcher Registration Page  !!!
+        %h2
+          - if @flash
+            = @flash
+      %section.navbar-inner
+    %section.container
+      %form.form-horizontal(method="post" action="/resultat")
+        .control-group 
+        %br
+          .controls
+            %input(type="text" name="inputUsername" placeholder="Name")
+          %br
+          .controls
+            %input(type="text" name="inputEmail" placeholder="Email")
+          %br
+          .controls
+            %input(type="password" name="inputPassword" placeholder="Password")
+          %br
+          .controls
+            %input(type="password" name="inputPasswordConfirm" placeholder="Password Confirm")
+        .control-group.controls
+          %input(type="checkbox") Remember me
+          - 2.times do 
+            %br 
+          %button.btn(type="submit" name="submit") 
+            Sign In
+
+
+    %script(type='text/javascript' src='/js/jquery.js')
+    %script(type='text/javascript' src='/js/test.js')
+
+

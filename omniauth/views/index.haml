@@ -1,0 +1,15 @@
+.container.well
+	%h3 Your #{@provider} account was succefullt added to the system
+	%h5 You are logged in with the following access_token :  #{@gold_token}
+	%h5 Your name is : #{@name}
+	%h5 You live in : #{@ciudad}
+	%h5 Your email is : #{@email}
+	%h5 Your provider is : #{@provider}
+	%h5 Your viewer_id is : #{@item_id}
+	%h5 Your profile picture is : 
+	%img{:src => @foto}
+	-2.times do
+		%br
+	%a.btn.btn-danger.btn-large{:href => "/logout"} Logout &raquo;
+	%a.btn.btn-info.btn-large{:href => "http://fetcher.xaviervia.com.ar:4568/"} Add Filters Sources etc...
+	

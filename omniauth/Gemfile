@@ -1,0 +1,19 @@
+# A sample Gemfile
+
+source "https://rubygems.org"
+
+gem "sinatra"
+gem "omniauth-facebook"
+gem "omniauth-twitter"
+gem "pry"
+gem "haml"
+gem "mongo"
+gem "g11n"
+gem 'rack-ssl'
+gem 'rack-ssl-enforcer'
+gem 'fetcher-mongoid-models'
+
+group :database do
+  gem "mongo"
+  gem "bson_ext"
+end

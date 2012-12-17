@@ -1,0 +1,38 @@
+!!! 5
+%html
+  %head
+    %title resultat
+    %link{ :href => "/css/bootstrap.css", :type => "text/css", :rel => "stylesheet" }
+    %link{ :href => "/css/style.css", :type => "text/css", :rel => "stylesheet" }
+  %body
+    %nav
+      %header 
+        %h1 Congratulations you got succefully registered !!!
+      %section.navbar-inner
+
+      %section.resultat
+        Here are the passed parameters :
+        - if not @username.nil?
+          = @username
+        - if not @email.nil?
+          = @email
+        - if not @password.nil?
+          = @password
+        - if not @passwordConfirm.nil?
+          = @passwordConfirm
+      -2.times do
+        %br
+      %section.resultat    
+        And here is what was inserted into mongodb :
+        %br
+        - if not @parsedTest.nil?
+          = @parsedTest
+      -2.times do
+        %br
+      %section.well.well-large
+        %a.btn.btn-primary.btn-large{:href => "http://localhost:4567/"} Add social Network Accounts
+
+    %script(type='text/javascript' src='/js/jquery.js')
+    %script(type='text/javascript' src='/js/test.js')
+
+

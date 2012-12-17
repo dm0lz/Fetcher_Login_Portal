@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Omniauth Page
+
+    %link{ :href => "/css/bootstrap.css", :type => "text/css", :rel => "stylesheet" }
+    %link{ :href => "/css/stylesheet.css", :type => "text/css", :rel => "stylesheet" }
+
+  %body
+    %header.page-header
+      %h1
+        Login Page
+
+    = yield
+    
+    %footer 
+      %p &copy; Fetcher 2012
+
+    %script(type='text/javascript' src='js/jquery.min.js')
+    %script(type='text/javascript' src='js/bootstrap.min.js')
+    %script(type='text/javascript' src='js/app.js')
