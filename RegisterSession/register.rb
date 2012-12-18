@@ -7,6 +7,7 @@ require "haml"
 require "rack/flash"
 require "fetcher-mongoid-models"
 
+Fetcher::Mongoid::Models::Db.new "/home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml"
 
 class Register < Sinatra::Base
 
@@ -20,7 +21,6 @@ use Rack::Session::Cookie, :key => 'rack.session',
                            :secret => 'change_me'
 use Rack::Flash
 
-Fetcher::Mongoid::Models::Db.new "/home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml"
 
   get '/' do
     redirect '/register'

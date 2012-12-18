@@ -1,0 +1,10 @@
+[2012-12-18 15:12:27] INFO  WEBrick 1.3.1
+[2012-12-18 15:12:27] INFO  ruby 1.9.3 (2012-11-10) [i686-linux]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-18 15:12:27] INFO  WEBrick::HTTPServer#start: pid=3935 port=4567
+localhost - - [18/Dec/2012:15:12:37 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+localhost - - [18/Dec/2012:15:12:37 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+localhost - - [18/Dec/2012:15:13:00 ART] "GET / HTTP/1.1" 200 1361
+- -> /

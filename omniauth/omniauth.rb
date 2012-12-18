@@ -58,7 +58,7 @@ class OmniauthConnect < Sinatra::Base
       @email = session['email']
       @provider = session['provider']
       @item_id = session['id']
-      OmniAuth.config.full_host = "https://fetcher.xaviervia.com.ar:8005" #if session['provider'] == "facebook"
+      #OmniAuth.config.full_host = "https://fetcher.xaviervia.com.ar:8005" #if session['provider'] == "facebook"
         
       #binding.pry
       haml :index
@@ -82,7 +82,7 @@ class OmniauthConnect < Sinatra::Base
     session['picture'] = request.env['omniauth.auth']['info'].image
     session['email'] = request.env['omniauth.auth']['info'].email
     session['provider'] = request.env['omniauth.auth'].provider
-    OmniAuth.config.full_host = "https://fetcher.xaviervia.com.ar:8005" #if session['provider'] == "facebook"
+    #OmniAuth.config.full_host = "https://fetcher.xaviervia.com.ar:8005" #if session['provider'] == "facebook"
     session['id'] = request.env['omniauth.auth']['uid'].to_i
     session['description'] = request.env['omniauth.auth']['extra']['raw_info']['description'] if session['provider'] == "twitter"
     session['description'] = request.env['omniauth.auth']['extra']['raw_info']['work'] if session['provider'] == "facebook"
@@ -109,7 +109,7 @@ class OmniauthConnect < Sinatra::Base
       "additionalType" => [ "http://getfetcher.net/Item" ], 
       "itemId" => [ session['id'] ], 
       "name" => [session['name']], 
-      "User#dateRegistered" => [ session['time'] ], 
+      "userDateRegistered" => [ session['time'] ], 
       "description" => [ session['description'] ], 
       "url" => [ session['url'] ], 
       "accessToken" => session['access_token'], 

@@ -4,7 +4,9 @@ require 'pry'
 require 'haml'
 require 'sass'
 require 'rack-flash'
+require 'fetcher-mongoid-models'
 
+Fetcher::Mongoid::Models::Db.new "/home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml"
 
 class MongoInterface < Sinatra::Base
 
@@ -46,31 +48,54 @@ use Rack::Flash
 	  streamArgument = session[:streamArgument].split
 	  login = session[:login] 
 	  
-	 to_insert_to_columns = { 
-	 "filter"=>
-	  [{"type"=>"text",
-	    "property"=>"articleBody",
-	    "operator"=>"includes",
-	    "value"=>[filter]}],
-	 "source"=>
-	  [{"streamType"=> streamType,
-	    "streamArgument"=> streamArgument,
-	    "provider"=>"twitter",
-	    "endpoint"=> streamType,
-	    "viewer"=> session['id'] }] 
-	  }
+	 #to_insert_to_columns = { 
+	 #"filter"=>
+	 # [{"type"=>"text",
+	 #   "property"=>"articleBody",
+	 #   "operator"=>"includes",
+	 #   "value"=>[filter]}],
+	 #"source"=>
+	 # [{"streamType"=> streamType,
+	 #   "streamArgument"=> streamArgument,
+	 #   "provider"=>"twitter",
+	 #   "endpoint"=> streamType,
+	 #   "viewer"=> session['id'] }] 
+	 # }
+	  #to_insert_to_source = {
+	  #	"streamType"=> streamType,
+	  #  "streamArgument"=> streamArgument,
+	  #  "provider"=>"twitter",
+	  #  "endpoint"=> streamType,
+	  #  "viewer"=> session['id'] 
+	  #}
 
-	  to_insert_to_source = {
+	  column = Column.new(
+		  "filter"=>
+		  [{"type"=>"text",
+		    "property"=>"articleBody",
+		    "operator"=>"includes",
+		    "value"=>[filter]}],
+		 "source"=>
+		  [{"streamType"=> streamType,
+		    "streamArgument"=> streamArgument,
+		    "provider"=>"twitter",
+		    "endpoint"=> streamType,
+		    "viewer"=> session['id'] }] 
+	  )
+
+
+	  source = Source.new(
 	  	"streamType"=> streamType,
 	    "streamArgument"=> streamArgument,
 	    "provider"=>"twitter",
 	    "endpoint"=> streamType,
 	    "viewer"=> session['id'] 
-	  }
+	  )
 
 
 	  begin
-	  	user_id_to_update = usersCollection.find({"login" => session["register_username"]}).find.each{|i| p i}['_id']
+	  	#user_id_to_update = usersCollection.find({"login" => session["register_username"]}).find.each{|i| p i}['_id']
+	  	user_id_to_update = User.where(login: session["register_username"]).first.attributes["_id"]
 	  rescue Exception => e
 	  	puts "the user you want to add columns to couldn't be found. Here is the error message : #{e.message}"
 	  end
@@ -78,11 +103,16 @@ use Rack::Flash
 
 	  unless session[:column_object_id].empty?
 	  	#binding.pry
-	  	columnsCollection.update( { "_id" => BSON::ObjectId(session[:column_object_id]) }, { "$push" => { "source" => to_insert_to_source } } )
-		usersCollection.update( {"_id" => user_id_to_update }, {"$set" => { "columns" => BSON::ObjectId(session[:column_object_id]) } } )
+	  	Column.where(_id: session[:column_object_id]).push(:source, source.attributes)
+	  	User.where(_id: user_id_to_update).push(:column, session[:column_object_id])
+	  	#columnsCollection.update( { "_id" => BSON::ObjectId(session[:column_object_id]) }, { "$push" => { "source" => to_insert_to_source } } )
+			#usersCollection.update( {"_id" => user_id_to_update }, {"$set" => { "columns" => BSON::ObjectId(session[:column_object_id]) } } )
 	  else
-	  	column_id = columnsCollection.insert(to_insert_to_columns)
-		usersCollection.update( {"_id" => user_id_to_update }, {"$push" => {"columns" => column_id }} )
+	  	column.save
+	  	column_id = column.attributes["_id"]
+	  	User.where(_id: user_id_to_update).push(:column, column_id)
+	  	#column_id = columnsCollection.insert(to_insert_to_columns)
+			#usersCollection.update( {"_id" => user_id_to_update }, {"$push" => {"columns" => column_id }} )
 	  end
 
 		flash[:notice] = "Here is the user_id from users collection to be inserted in shore : #{user_id_to_update} and here is the column_id you can use to add more sources : #{column_id}"
