@@ -8,12 +8,6 @@ Feature: User Registers
 	Background: 
 		Given fetcher user connects to http://localhost:4566/
 
-	@valid 
-	Scenario: Register with all valid data
-		Given i am a fetcher user
-		When i register with everything valid
-		Then my data should be inserted in the database 
-
 	@invalid
 	Scenario: Register with password confirm different from password
 		Given i am a fetcher user
@@ -31,3 +25,9 @@ Feature: User Registers
 		Given i am a fetcher user
 		When i register with a blank password
 		Then i should see an error message with blank password
+	
+	@valid 
+	Scenario: Register with all valid data
+		Given i am a fetcher user
+		When i register with everything valid
+		Then my data should be inserted in the database 

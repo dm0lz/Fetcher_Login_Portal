@@ -13,7 +13,7 @@ class Register < Sinatra::Base
 
 set :haml, :format => :html5
 set :port, 4566
-#enable :sessions
+
 use Rack::Session::Cookie, :key => 'rack.session',
                            #:domain => '',
                            :path => '/',

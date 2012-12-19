@@ -13,6 +13,6 @@ When /^i add my twitter account$/ do
 end
 
 Then /^i should have my access token inserted into database$/ do
-	collPersonUser.find({"Item#id" => 308762265}).collect{|i| p i}.empty?.should be_false
+	collPersonUser.find({"itemId" => 308762265}).collect{|i| p i}.empty?.should be_false
 end
 

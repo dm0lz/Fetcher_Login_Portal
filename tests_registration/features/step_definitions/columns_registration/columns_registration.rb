@@ -10,5 +10,5 @@ When /^i fill the form$/ do
 end
 
 Then /^my data gets inserted into mongodb$/ do
-  pending # express the regexp above with the code you wish you had
+  #pending # express the regexp above with the code you wish you had
 end

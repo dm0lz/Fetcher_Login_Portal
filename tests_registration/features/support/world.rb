@@ -9,16 +9,16 @@ module MongoTest
 		browser.close
 	end
 	def client
-    @client ||= Mongo::Connection.new("mongocfg1.fetcher")
+    @client ||= Mongo::Connection.new
   end
   def db
-    @db ||= client["test"]
+    @db ||= client["mongoid"]
   end
   def coll
-    @coll ||= db["users"]
+    @coll ||= db["User"]
   end
   def collPersonUser
-  	@collPersonUser ||= db["http://schema.org/Person/User"]
+  	@collPersonUser ||= db["PersonUser"]
   end
 end
 
