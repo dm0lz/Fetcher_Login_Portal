@@ -7,7 +7,7 @@ require "haml"
 require "rack/flash"
 require "fetcher-mongoid-models"
 
-Fetcher::Mongoid::Models::Db.new "/home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml"
+Fetcher::Mongoid::Models::Db.new "../config/main.yml"
 
 class Register < Sinatra::Base
 

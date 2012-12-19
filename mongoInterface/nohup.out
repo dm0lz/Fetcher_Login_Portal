@@ -187,3 +187,21 @@ NameError - uninitialized constant Filter::Column_id:
 >> Maximum connections set to 1024
 >> Listening on 0.0.0.0:4568, CTRL+C to stop
 == Sinatra/1.3.3 has taken the stage on 4568 for development with backup from Thin
+/Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:55:in `require': cannot load such file -- fetcher-mongoid-models (LoadError)
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:55:in `require'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/mongoInterface/mongoInterface.rb:7:in `<top (required)>'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from run_mongoInterface.rb:1:in `<main>'
+/Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `initialize': No such file or directory - /home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml (Errno::ENOENT)
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `new'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `load_yaml'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config.rb:84:in `load!'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid.rb:148:in `load!'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/fetcher-mongoid-models-0.0.2/lib/fetcher/mongoid/models/db.rb:10:in `initialize'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/mongoInterface/mongoInterface.rb:9:in `new'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/mongoInterface/mongoInterface.rb:9:in `<top (required)>'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from run_mongoInterface.rb:1:in `<main>'
+== Sinatra/1.3.3 has taken the stage on 4568 for development with backup from Thin

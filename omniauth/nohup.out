@@ -275,3 +275,57 @@ localhost - - [19/Dec/2012:18:29:18 ART] "GET /auth/twitter/callback?oauth_token
 - -> /auth/twitter/callback?oauth_token=gM7UDnB9run96HvaDhQfbfM5CXFsjRywOzVmoNBYQM&oauth_verifier=l5pTnQJ8DHh5oU3o6FaD6A5Cj4DFYVQY4cjy7X1w
 localhost - - [19/Dec/2012:18:29:21 ART] "GET / HTTP/1.1" 200 1361
 - -> /
+/Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/spec_set.rb:90:in `block in materialize': Could not find fetcher-mongoid-models-0.0.0 in any of the sources (Bundler::GemNotFound)
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/spec_set.rb:83:in `map!'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/spec_set.rb:83:in `materialize'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/definition.rb:127:in `specs'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/definition.rb:172:in `specs_for'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/definition.rb:161:in `requested_specs'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/environment.rb:23:in `requested_specs'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/runtime.rb:11:in `setup'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler.rb:107:in `setup'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.1.5/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:60:in `require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:60:in `rescue in require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:35:in `require'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/omniauth/omniauth.rb:1:in `<top (required)>'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from run_omniauth.rb:1:in `<main>'
+/Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `initialize': No such file or directory - /home/fetcher/Desktop/fetcher-mongoid-models/config/main.yml (Errno::ENOENT)
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `new'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config/environment.rb:40:in `load_yaml'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid/config.rb:84:in `load!'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/mongoid-3.0.15/lib/mongoid.rb:148:in `load!'
+	from /Users/molz/.rvm/gems/ruby-1.9.3-p194/gems/fetcher-mongoid-models-0.0.2/lib/fetcher/mongoid/models/db.rb:10:in `initialize'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/omniauth/omniauth.rb:11:in `new'
+	from /Users/molz/Desktop/Fetcher_Login_Portal/omniauth/omniauth.rb:11:in `<top (required)>'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /Users/molz/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from run_omniauth.rb:1:in `<main>'
+[2012-12-19 20:24:02] INFO  WEBrick 1.3.1
+[2012-12-19 20:24:02] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin10.8.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-19 20:24:02] INFO  WEBrick::HTTPServer#start: pid=667 port=4567
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [19/Dec/2012:20:24:21 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [19/Dec/2012:20:24:37 ART] "GET /auth/twitter/callback?oauth_token=XnfLVUH9vfRDSVSdBlnTnMBoY8PManMP5egMYV7L9Q&oauth_verifier=UmW4k0D6Jjh9UxieVFhiEQxRWd0rMmTDuYSgRFBUI5Y HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=XnfLVUH9vfRDSVSdBlnTnMBoY8PManMP5egMYV7L9Q&oauth_verifier=UmW4k0D6Jjh9UxieVFhiEQxRWd0rMmTDuYSgRFBUI5Y
+practivate.adobe.com - - [19/Dec/2012:20:24:40 ART] "GET / HTTP/1.1" 200 1361
+- -> /
