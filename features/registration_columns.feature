@@ -1,3 +1,4 @@
+@column
 Feature: User adds columns
 
 	As a fetcher user
@@ -11,3 +12,8 @@ Feature: User adds columns
 		Given a fetcher user
 		When i fill the form
 		Then my data gets inserted into mongodb
+
+	Scenario: user adds a second column
+		Given am fetcher user
+		When he fills the forms
+		Then its data should be inserted into db

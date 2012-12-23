@@ -329,3 +329,431 @@ practivate.adobe.com - - [19/Dec/2012:20:24:37 ART] "GET /auth/twitter/callback?
 - -> /auth/twitter/callback?oauth_token=XnfLVUH9vfRDSVSdBlnTnMBoY8PManMP5egMYV7L9Q&oauth_verifier=UmW4k0D6Jjh9UxieVFhiEQxRWd0rMmTDuYSgRFBUI5Y
 practivate.adobe.com - - [19/Dec/2012:20:24:40 ART] "GET / HTTP/1.1" 200 1361
 - -> /
+[2012-12-19 22:49:36] INFO  WEBrick 1.3.1
+[2012-12-19 22:49:36] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin10.8.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-19 22:49:36] INFO  WEBrick::HTTPServer#start: pid=837 port=4567
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [19/Dec/2012:22:49:52 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [19/Dec/2012:22:49:53 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [19/Dec/2012:22:49:53 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [19/Dec/2012:22:49:53 ART] "GET /auth/twitter HTTP/1.1" 500 112341
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [19/Dec/2012:22:49:53 ART] "GET /__sinatra__/500.png HTTP/1.1" 200 31056
+http://localhost:4567/auth/twitter -> /__sinatra__/500.png
+[2012-12-22 03:39:24] INFO  WEBrick 1.3.1
+[2012-12-22 03:39:24] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin10.8.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-22 03:39:24] INFO  WEBrick::HTTPServer#start: pid=2049 port=4567
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [22/Dec/2012:03:40:03 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [22/Dec/2012:03:40:04 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [22/Dec/2012:03:40:14 ART] "GET /auth/twitter/callback?oauth_token=5jWnqw2mEZTubEMF8b22x5vIvGgPbwwbLbTr7FsOEA&oauth_verifier=PKLfIhPUQZXnKH5cO3nxaotWTrHteU2WCiefnzKBs HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=5jWnqw2mEZTubEMF8b22x5vIvGgPbwwbLbTr7FsOEA&oauth_verifier=PKLfIhPUQZXnKH5cO3nxaotWTrHteU2WCiefnzKBs
+practivate.adobe.com - - [22/Dec/2012:03:40:17 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+[2012-12-23 01:26:07] INFO  WEBrick 1.3.1
+[2012-12-23 01:26:07] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin10.8.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-23 01:26:07] INFO  WEBrick::HTTPServer#start: pid=1021 port=4567
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:26:34 ART] "GET /auth/twitter HTTP/1.1" 302 113
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:26:42 ART] "GET /auth/twitter/callback?oauth_token=3msSyX8624KTlqdf1nnzyi8P4tkhaK68GHhBbJkk&oauth_verifier=tvfRbhWBYetbheubN3GkqGbklt3iO2Q27oyleaTbNQ HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=3msSyX8624KTlqdf1nnzyi8P4tkhaK68GHhBbJkk&oauth_verifier=tvfRbhWBYetbheubN3GkqGbklt3iO2Q27oyleaTbNQ
+practivate.adobe.com - - [23/Dec/2012:01:26:44 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:26:45 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:26:57 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:29:36 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:29:45 ART] "GET /auth/twitter/callback?oauth_token=cda2mCJe3mZ62kOxYreWl2bohbQ3JaO7rR3UaO4PE&oauth_verifier=J9FVe2WrcWhOuDixAVSjwuDxBnNOW4mnT2edSKJgfEg HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=cda2mCJe3mZ62kOxYreWl2bohbQ3JaO7rR3UaO4PE&oauth_verifier=J9FVe2WrcWhOuDixAVSjwuDxBnNOW4mnT2edSKJgfEg
+practivate.adobe.com - - [23/Dec/2012:01:29:47 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:30:34 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:01:32:02 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:32:11 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:32:12 ART] "GET /auth/twitter HTTP/1.1" 302 113
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:32:15 ART] "GET /auth/twitter/callback?oauth_token=oNc7QepaKLk8B41PBGkSu5Hx45yT4Fhcf1ZfxAQ8&oauth_verifier=HvI8zQMFPO5NtN4vpP3s0otKfgqAxS6U0mxf9ovGQ HTTP/1.1" 302 0
+http://localhost:4567/ -> /auth/twitter/callback?oauth_token=oNc7QepaKLk8B41PBGkSu5Hx45yT4Fhcf1ZfxAQ8&oauth_verifier=HvI8zQMFPO5NtN4vpP3s0otKfgqAxS6U0mxf9ovGQ
+practivate.adobe.com - - [23/Dec/2012:01:32:17 ART] "GET / HTTP/1.1" 200 1361
+http://localhost:4567/ -> /
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:33:11 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:33:22 ART] "GET /auth/twitter/callback?oauth_token=9o3VoVRQR8aepth3VtHO5rOEpunFTTRko5SvFlD94&oauth_verifier=W7DJOZ4JY3JXn1cYKBDSKg8gRWmykFlN1xRhAqpdDVY HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=9o3VoVRQR8aepth3VtHO5rOEpunFTTRko5SvFlD94&oauth_verifier=W7DJOZ4JY3JXn1cYKBDSKg8gRWmykFlN1xRhAqpdDVY
+practivate.adobe.com - - [23/Dec/2012:01:33:25 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:33:26 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:01:33:26 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:33:37 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:34:04 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:34:43 ART] "GET /auth/twitter/callback?oauth_token=jN1aUJT5nA1AIlaZPRHkyS5s0E499WeiN0O28hi5ow&oauth_verifier=SdrSLZGmZQYhi2JIC7cls9N21xweeiS0MERV3NSXECM HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=jN1aUJT5nA1AIlaZPRHkyS5s0E499WeiN0O28hi5ow&oauth_verifier=SdrSLZGmZQYhi2JIC7cls9N21xweeiS0MERV3NSXECM
+practivate.adobe.com - - [23/Dec/2012:01:34:45 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:37:33 ART] "GET /auth/twitter HTTP/1.1" 302 113
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:37:43 ART] "GET /auth/twitter/callback?oauth_token=BTnm0620MpavawjppOsXI0xRaas53ACo8nlNUyjc&oauth_verifier=qpGB1q6BvC2o4N12jkqItfo8haht6GftHevqNEpy1XE HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=BTnm0620MpavawjppOsXI0xRaas53ACo8nlNUyjc&oauth_verifier=qpGB1q6BvC2o4N12jkqItfo8haht6GftHevqNEpy1XE
+practivate.adobe.com - - [23/Dec/2012:01:37:44 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:37:45 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:01:37:45 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:37:55 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:37:56 ART] "GET /auth/twitter HTTP/1.1" 302 116
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:37:59 ART] "GET /auth/twitter/callback?oauth_token=10jxAKxcDfKWQ5wLocRnQGjD9IeA9xwZyVYoj1LvLKY&oauth_verifier=h2agXQ1P7V1CvBHqUh3yprZeIrXgzTpVoaVfjg4I HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=10jxAKxcDfKWQ5wLocRnQGjD9IeA9xwZyVYoj1LvLKY&oauth_verifier=h2agXQ1P7V1CvBHqUh3yprZeIrXgzTpVoaVfjg4I
+practivate.adobe.com - - [23/Dec/2012:01:38:01 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:01:41:53 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:01:42:00 ART] "GET /auth/twitter/callback?oauth_token=Vnjs7XBQnASByy4yuvqnpznHCoF1wPfqNve18ylGjk&oauth_verifier=obMGR5KhQrqr8fu0awy3rvlwbg1PUE8YM04hrZK9Tk HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=Vnjs7XBQnASByy4yuvqnpznHCoF1wPfqNve18ylGjk&oauth_verifier=obMGR5KhQrqr8fu0awy3rvlwbg1PUE8YM04hrZK9Tk
+practivate.adobe.com - - [23/Dec/2012:01:42:02 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:42:03 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:01:42:11 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+[2012-12-23 02:19:29] INFO  WEBrick 1.3.1
+[2012-12-23 02:19:29] INFO  ruby 1.9.3 (2012-04-20) [x86_64-darwin10.8.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2012-12-23 02:19:29] INFO  WEBrick::HTTPServer#start: pid=1387 port=4567
+practivate.adobe.com - - [23/Dec/2012:02:19:55 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:19:56 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:19:58 ART] "GET /auth/twitter HTTP/1.1" 302 112
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:20:06 ART] "GET /auth/twitter/callback?oauth_token=osHMgXwMj7UmY3QWKbcPuQDk5iYEXWW9E2k7kNo&oauth_verifier=YUSHvOmTcC4Zvh9YODi3tsPiOTsP5S3deqgfPMTxvM HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=osHMgXwMj7UmY3QWKbcPuQDk5iYEXWW9E2k7kNo&oauth_verifier=YUSHvOmTcC4Zvh9YODi3tsPiOTsP5S3deqgfPMTxvM
+practivate.adobe.com - - [23/Dec/2012:02:20:08 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:20:11 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:20:11 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:20:19 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:20:23 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:20:24 ART] "GET /auth/twitter/callback?oauth_token=ETaQJBjEqqqcHrHM0d0k0C3qSji84w9c4YT0Mxn8c&oauth_verifier=ihbHlJqZe4iBHM8hg2DHsm5VncbM3aeZGaYmhuvb7cs HTTP/1.1" 302 0
+http://localhost:4567/ -> /auth/twitter/callback?oauth_token=ETaQJBjEqqqcHrHM0d0k0C3qSji84w9c4YT0Mxn8c&oauth_verifier=ihbHlJqZe4iBHM8hg2DHsm5VncbM3aeZGaYmhuvb7cs
+practivate.adobe.com - - [23/Dec/2012:02:20:28 ART] "GET / HTTP/1.1" 200 1361
+http://localhost:4567/ -> /
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:22:02 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:22:04 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:22:13 ART] "GET /auth/twitter/callback?oauth_token=KIPTBtQ0i6zSlQeUgtnGCdBMVvoTQTSwkD3qhr5rho&oauth_verifier=TXS0StSPq3fCbfkUCttJLcm3cfMUg18mCgwRGVUDOJo HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=KIPTBtQ0i6zSlQeUgtnGCdBMVvoTQTSwkD3qhr5rho&oauth_verifier=TXS0StSPq3fCbfkUCttJLcm3cfMUg18mCgwRGVUDOJo
+practivate.adobe.com - - [23/Dec/2012:02:22:16 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:22:19 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:22:19 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:22:32 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:22:35 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:22:40 ART] "GET /auth/twitter/callback?oauth_token=1iyMJaht8rQUtkWZiBn9cg8FoLlkBOgiwQWydCLwvA&oauth_verifier=VaZypiRn0D1CGLtCrFVMaD3h5MsfrrWDc67xcwXIRT8 HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=1iyMJaht8rQUtkWZiBn9cg8FoLlkBOgiwQWydCLwvA&oauth_verifier=VaZypiRn0D1CGLtCrFVMaD3h5MsfrrWDc67xcwXIRT8
+practivate.adobe.com - - [23/Dec/2012:02:22:43 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:24:28 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:24:29 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:24:29 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:24:31 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:24:40 ART] "GET /auth/twitter/callback?oauth_token=3kFpGIOSgLY7YxtruPiAadOxWs9iz546NcD4kDAZi8&oauth_verifier=2a4HSBqHYCYLiusMSO7qRKjQzOSdTb2XmfUd5rrl7I HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=3kFpGIOSgLY7YxtruPiAadOxWs9iz546NcD4kDAZi8&oauth_verifier=2a4HSBqHYCYLiusMSO7qRKjQzOSdTb2XmfUd5rrl7I
+practivate.adobe.com - - [23/Dec/2012:02:24:42 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:24:46 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:24:46 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:25:00 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:25:05 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:25:11 ART] "GET /auth/twitter/callback?oauth_token=slqnU6RMA6zcUZYrtKQrX4Ih9bFxB0HzwQbez5z1Q&oauth_verifier=lyzIRkZRxRuCJ3bs7bAzTNprkScKtNhEYIkTYf8 HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=slqnU6RMA6zcUZYrtKQrX4Ih9bFxB0HzwQbez5z1Q&oauth_verifier=lyzIRkZRxRuCJ3bs7bAzTNprkScKtNhEYIkTYf8
+practivate.adobe.com - - [23/Dec/2012:02:25:13 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:28:06 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:28:09 ART] "GET /auth/twitter HTTP/1.1" 302 113
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:28:19 ART] "GET /auth/twitter/callback?oauth_token=PPHiZOcgFTIVrpvW3wjM7AGdjSGaHsLyV5Zi7TV0&oauth_verifier=kqD84ztOMZ1VjfFZR2IihKkLkETWz8SsWyM5W9Q HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=PPHiZOcgFTIVrpvW3wjM7AGdjSGaHsLyV5Zi7TV0&oauth_verifier=kqD84ztOMZ1VjfFZR2IihKkLkETWz8SsWyM5W9Q
+practivate.adobe.com - - [23/Dec/2012:02:28:21 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:28:24 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:28:27 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:28:47 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:28:51 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:28:57 ART] "GET /auth/twitter/callback?oauth_token=E7c6OKdl1538l9iXn8W8grj5Es9AezoNBtSn7lXAM8&oauth_verifier=1mKaw49O5H4zmU4GbXTUlLBAwk0eLin2UBfMtUomYOQ HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=E7c6OKdl1538l9iXn8W8grj5Es9AezoNBtSn7lXAM8&oauth_verifier=1mKaw49O5H4zmU4GbXTUlLBAwk0eLin2UBfMtUomYOQ
+practivate.adobe.com - - [23/Dec/2012:02:28:59 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:30:49 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:30:50 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:30:50 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:30:53 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:31:03 ART] "GET /auth/twitter/callback?oauth_token=ul6H43HJQgGt4qGBpxvTIL81fmfgSUZF7oWecrYdw&oauth_verifier=QVNTJWwu7J9abNhudBcTAnrQVoN9OGmudpr5jHR2DhE HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=ul6H43HJQgGt4qGBpxvTIL81fmfgSUZF7oWecrYdw&oauth_verifier=QVNTJWwu7J9abNhudBcTAnrQVoN9OGmudpr5jHR2DhE
+practivate.adobe.com - - [23/Dec/2012:02:31:05 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:31:12 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:31:15 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:31:36 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:31:39 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:31:46 ART] "GET /auth/twitter/callback?oauth_token=73L0hPW7ulagX29xN80vE9Em3LpkxPd4fwbtamqko&oauth_verifier=mSL7iQQeF0Aa7fZmbQJeWpHIqsn0gsrvOjwgWLrnY HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=73L0hPW7ulagX29xN80vE9Em3LpkxPd4fwbtamqko&oauth_verifier=mSL7iQQeF0Aa7fZmbQJeWpHIqsn0gsrvOjwgWLrnY
+practivate.adobe.com - - [23/Dec/2012:02:31:47 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:38:33 ART] "GET /favicon.ico HTTP/1.1" 404 447
+- -> /favicon.ico
+practivate.adobe.com - - [23/Dec/2012:02:38:36 ART] "GET /auth/twitter HTTP/1.1" 302 114
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:38:46 ART] "GET /auth/twitter/callback?oauth_token=B68cvaVMRgPQg3gpzuW9j5sCU2AuHqWJyykyDEKnk&oauth_verifier=myp7WySdG5sZRri4fgfiQcpdFg388OIUzdKUEm5gZk HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=B68cvaVMRgPQg3gpzuW9j5sCU2AuHqWJyykyDEKnk&oauth_verifier=myp7WySdG5sZRri4fgfiQcpdFg388OIUzdKUEm5gZk
+practivate.adobe.com - - [23/Dec/2012:02:38:49 ART] "GET / HTTP/1.1" 200 1361
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:38:56 ART] "GET /logout HTTP/1.1" 200 0
+http://localhost:4567/ -> /logout
+practivate.adobe.com - - [23/Dec/2012:02:38:59 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:39:19 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:39:23 ART] "GET /auth/twitter HTTP/1.1" 302 115
+http://localhost:4567/ -> /auth/twitter
+practivate.adobe.com - - [23/Dec/2012:02:39:29 ART] "GET /auth/twitter/callback?oauth_token=tbwrxzjBdtRPix8kUSLk6knktfZbxUMmc8xZo3l3kQ&oauth_verifier=JGrtzoIgtwq13PSvkXr626olonAiI505bUr6eMI HTTP/1.1" 302 0
+- -> /auth/twitter/callback?oauth_token=tbwrxzjBdtRPix8kUSLk6knktfZbxUMmc8xZo3l3kQ&oauth_verifier=JGrtzoIgtwq13PSvkXr626olonAiI505bUr6eMI
+practivate.adobe.com - - [23/Dec/2012:02:39:31 ART] "GET / HTTP/1.1" 200 1351
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET / HTTP/1.1" 200 1017
+- -> /
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET /css/stylesheet.css HTTP/1.1" 200 631
+http://localhost:4567/ -> /css/stylesheet.css
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET /js/bootstrap.min.js HTTP/1.1" 200 25526
+http://localhost:4567/ -> /js/bootstrap.min.js
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET /js/jquery.min.js HTTP/1.1" 200 92556
+http://localhost:4567/ -> /js/jquery.min.js
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET /css/bootstrap.css HTTP/1.1" 200 115072
+http://localhost:4567/ -> /css/bootstrap.css
+practivate.adobe.com - - [23/Dec/2012:02:40:46 ART] "GET /js/app.js HTTP/1.1" 200 334
+http://localhost:4567/ -> /js/app.js

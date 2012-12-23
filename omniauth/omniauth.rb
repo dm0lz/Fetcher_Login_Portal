@@ -79,7 +79,8 @@ class OmniauthConnect < Sinatra::Base
       "accessSecret" => session['access_secret']
       )
 
-      if not_in_db? session['id']
+      if not_in_db? session['name']
+        #binding.pry
         personuser.save
         user_id_to_update = User.where(login: session["register_username"]).first._id
         User.where(_id: user_id_to_update).push(:PersonUser, personuser._id)
@@ -93,8 +94,8 @@ class OmniauthConnect < Sinatra::Base
   end
 
   helpers do
-    def not_in_db? uid
-      not PersonUser.where(itemId: uid).exists?
+    def not_in_db? name
+      not User.where(login: name).exists?
     end    
   end
 

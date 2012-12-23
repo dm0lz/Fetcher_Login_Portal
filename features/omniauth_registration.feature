@@ -13,4 +13,9 @@ Feature: User adds Social Network Accounts
 		When i add my twitter account 
 		Then i should have my access token inserted into database
 
+	Scenario: User adds a second twitter account
+		Given i am a registrated fetcher user with one account already added
+		When i add a second twitter account 
+		Then i should have its access token inserted into database
+
 		
