@@ -9,7 +9,7 @@ module MongoTest
 		browser.close
 	end
 	def client
-    @client ||= Mongo::Connection.new
+    @client ||= Mongo::Connection.new("cfg1.database", "27017")
   end
   def db
     @db ||= client["mongoid"]

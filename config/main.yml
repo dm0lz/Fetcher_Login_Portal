@@ -3,4 +3,4 @@ development:
     default:
       database: mongoid
       hosts:
-        - localhost:27017
+        - cfg1.database:27017
